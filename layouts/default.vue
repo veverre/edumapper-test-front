@@ -7,12 +7,8 @@ import Header from '~/components/organisms/Header.vue';
     <div class="min-h-screen bg-gray-100 text-gray-900">
         <Header />
 
-        <main class="p-6">
+        <main class="p-2 max-w-3xl mx-auto">
             <slot />
         </main>
-
-        <footer class="p-4 text-center text-sm text-gray-500">
-            © 2025 – Front-end challenge by Upcity
-        </footer>
     </div>
 </template>
