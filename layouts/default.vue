@@ -1,8 +1,11 @@
+<script setup lang="ts">
+import Header from '~/components/organisms/Header.vue';
+
+</script>
+
 <template>
     <div class="min-h-screen bg-gray-100 text-gray-900">
-        <header class="p-4 bg-white shadow-md">
-            <h1 class="text-xl font-bold">Header</h1>
-        </header>
+        <Header />
 
         <main class="p-6">
             <slot />
