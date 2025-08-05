@@ -9,6 +9,6 @@ export default defineNuxtConfig({
   css: ["~/assets/styles/main.css"],
   ssr: true,
   nitro: {
-    preset: "cloudflare",
+    preset: "vercel",
   },
 });
