@@ -1,75 +1,34 @@
-# Nuxt Minimal Starter
+# Projet Nuxt 3 - Gestion des Lycées
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Ce projet est une application web développée avec Nuxt 4.  
+Il vise à afficher une liste de lycées, permettre la sélection d’un lycée, et préremplir certains formulaires avec des données fournies via une API locale.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## Fonctionnalités principales
 
-```bash
-# npm
-npm install
+- Affichage d’une liste de lycées récupérée depuis une API locale (server/api)
+- Composant Select simple pour choisir un lycée
+- Backend minimal en API serverless intégré avec Nuxt 4 (dans `server/api`)
+- Utilisation de Tailwind CSS pour le style
+- Architecture composants avec dossier `components/atoms`, `components/molecules` et `components/organisms`
 
-# pnpm
-pnpm install
+---
 
-# yarn
-yarn install
+## État du projet
 
-# bun
-bun install
-```
+⚠️ **Ce projet est actuellement en cours de développement et n’est pas encore terminé.**  
+Certaines fonctionnalités ne sont pas implémentées ou ne fonctionnent pas encore complètement, notamment :  
 
-## Development Server
+- Gestion avancée de l’autocomplétion dans le select  
+- Pages supplémentaires pour modifier les lycées  
+- Gestion des cartes "Spécialités" et "Notes"
 
-Start the development server on `http://localhost:3000`:
+---
 
-```bash
-# npm
-npm run dev
+## Installation & Lancement
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. Cloner le repo  
+2. Installer les dépendances :  
+   ```bash
+   npm install
