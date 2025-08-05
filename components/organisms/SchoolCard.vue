@@ -3,12 +3,17 @@ import Button from '~/components/atoms/Button.vue';
 
 type School = {
     name: string;
+    slug: string;
     city: string;
     type: string;
 }
 
 defineProps<{
     school: School
+}>()
+
+const emit = defineEmits<{
+    (e: 'changeSchool'): void
 }>()
 
 </script>
@@ -18,14 +23,14 @@ defineProps<{
             <h1 class="text-2xl mb-2">{{ school.name }}</h1>
             <ul class="flex gap-2">
                 <li>
-                    {{school.city}}
+                    {{ school.city }}
                 </li>
                 <li>
                     {{ school.type === 'public' ? 'Lycée Public' : 'Lycée privée' }}
                 </li>
             </ul>
         </div>
-        <Button class="self-start">Modifier</Button>
+        <Button class="self-start" @click="emit('changeSchool')">Modifier</Button>
     </div>
 </template>
 <style scoped>
